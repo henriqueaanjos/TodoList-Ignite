@@ -19,7 +19,6 @@ export function Home() {
   }
 
   function handleToggleTaskDone(id: number) {
-    console.log('1 - ', tasks);
     const updatedTasks = tasks.map(task => ({ ...task }))
 
     const updateTask = updatedTasks.find(task => task.id == id);
